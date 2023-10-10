@@ -1,0 +1,127 @@
+.bg-img{
+	/* background-image: url("https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/bootstrap5/bOy4OPu98lI.jpg"); */
+	background-size: cover;
+	background-position: center 30%;
+}
+
+body{
+	font-family: serif, "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+.box{
+  margin: 2px auto;
+  padding-top: 10px;
+  background:#fff;
+  text-align: center;
+	border: 1px solid #000;
+}
+
+.count-size{
+  font-size:3rem;
+  font-weight: bold;
+  color: #252C8C;
+}
+
+.heading{
+	font-size: 30px;
+	font-weight: bold;
+	background: linear-gradient(#05FBFF, #1E00FF);
+}
+
+footer{
+	font-size:16px;
+}
+
+footer a:hover {
+	opacity: 0.75; /* 25％ほど透明にする */
+	transform:scale(1.05,1.05);
+  transition:1s all;
+}
+
+.iconarea{
+	width: 200px;
+	margin:0 auto; 
+	overflow:hidden;
+}
+
+.iconarea > div {
+
+	height: 50px;
+	display: flex;           /* 中央寄せのためのスタイルを追加 */
+	align-items: center;     /* 縦方向の中央寄せ */
+	justify-content: center; /* 横方向の中央寄せ */
+}
+
+.video-wrapper {
+	position: relative;
+	padding-top: 56.25%; /* 16:9アスペクト比 */
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* 問い合わせフォーム用背景 */
+
+.form-background {
+	background: linear-gradient(to bottom, #ff6600, #ff5500);
+	opacity: 50%;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+body {
+	font-size: 12px;
+	
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	body {
+			font-size: 14px;
+	}
+	.count-size{
+		font-size:1.3rem;
+		font-weight: bold;
+		color: #252C8C;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	body {
+			font-size: 16px;
+	}
+	.count-size{
+		font-size:1.5rem;
+		font-weight: bold;
+		color: #252C8C;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	body {
+			font-size: 18px;
+	}
+	.count-size{
+		font-size:1.5rem;
+		font-weight: bold;
+		color: #252C8C;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	body {
+			font-size: 20px;
+	}
+	.count-size{
+		font-size:2rem;
+		font-weight: bold;
+		color: #252C8C;
+	}
+}
