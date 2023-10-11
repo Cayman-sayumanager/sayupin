@@ -32,16 +32,15 @@ footer{
 	font-size:16px;
 }
 
+.form-check-label {
+	vertical-align: middle;
+}
+
+
 footer a:hover {
 	opacity: 0.75; /* 25％ほど透明にする */
 	transform:scale(1.05,1.05);
   transition:1s all;
-}
-
-.iconarea{
-	width: 200px;
-	margin:0 auto; 
-	overflow:hidden;
 }
 
 .iconarea > div {
