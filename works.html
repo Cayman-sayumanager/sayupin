@@ -47,17 +47,17 @@
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
       </div>
       <!--カルーセル画像(3:1の画像※少なくともw4500px以上は必要)-->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/sample_gourmet.png" class="d-block w-100" alt="...">
+          <img class="sp_pc d-block w-100" data-imgsrc='["images/sample_gourmet_phone.png", "images/sample_gourmet.png"]' />
+          <!-- <img src="images/sample_gourmet.png" class="d-block w-100" alt="..."> -->
         </div>
         <div class="carousel-item">
-          <img src="images/sample_apparel.png" class="d-block w-100" alt="...">
+          <img class="sp_pc d-block w-100" data-imgsrc='["images/sample_apparel_phone.png", "images/sample_apparel.png"]' />
+          <!-- <img src="images/sample_apparel.png" class="d-block w-100" alt="..."> -->
         </div>
-
       </div>
       <!--ボタン-->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -141,5 +141,7 @@
   <script src="js/main.js"></script>
   <!--Youtube埋め込み用-->
   <script src="https://www.youtube.com/iframe_api"></script>
+  <!--画像差し替え用-->
+  <script src="js/imgchange.js"></script>
 </body>
 </html>
