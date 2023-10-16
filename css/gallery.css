@@ -12,6 +12,11 @@ body, html {
 	height: 100%;
 }
 
+.list-group {
+	height: calc(3 * 60px); /* 1項目の高さ(38px) + 1項目の下マージン(6px) を3倍しています。これは仮の数値ですので、実際のデザインに合わせて調整してください */
+	overflow-y: auto;
+}
+
 .box{
   margin: 2px auto;
   padding-top: 10px;
