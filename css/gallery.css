@@ -72,6 +72,11 @@ footer a:hover {
 	height: 100%;
 }
 
+/* サービスのリスト */
+.servicelist{
+	
+}
+
 /*代表メッセージ*/
 .message{
 	font-size: 18px;

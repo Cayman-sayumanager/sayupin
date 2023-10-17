@@ -26,14 +26,22 @@
           <li class="nav-item">
               <a href="aboutme.html" class="nav-link">Aboutme</a>
           </li>
-          <li class="nav-item">
-              <a href="service.html" class="nav-link active">サービス</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              サービス
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="service_Instagram.html">Instagram運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_TikTok.html">TikTok運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_SNSConsulting.html">SNSコンサルティング運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_VideoCreation.html">動画制作</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="works.html" class="nav-link">実績</a>
           </li>
           <li class="nav-item">
-            <a href="contact.html" class="nav-link">問い合わせ</a>
+            <a href="contact.php" class="nav-link">問い合わせ</a>
           </li>
         </ul>
       </div>
@@ -42,34 +50,132 @@
 
   <main>
     <p class="text-center py-2 mt-2 bg-light text-black-50 fs-2">料金表</p>
-    <div class="container mt-5">
-      <table class="table table-striped">
-          <thead>
-              <tr>
-                  <th scope="col">プラン</th>
-                  <th scope="col">コンサルプラン</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <th scope="row">こんな方</th>
-                  <td>社内で運用できるようにしたい</td>
-              </tr>
-              <tr>
-                  <th scope="row">費用</th>
-                  <td>100,000円/月</td>
-              </tr>
-              <tr>
-                  <th scope="row">内容</th>
-                  <td>
-                    <ul class="list-unstyled">
-                      <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>LINEでの相談</li>
-                      <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>オンライン相談（月2回）</li>
-                    </ul>
-                  </td>
-              </tr>
-          </tbody>
-      </table>
+  
+    <!--PC向け-->
+    <div class="container mt-4 d-none d-sm-block">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 py-2 d-flex align-items-center fs-5 border fw-bold">
+          <div style="height: 100%;">
+              <p></p>
+          </div>
+        </div>
+        <div class="col-7 py-2 d-flex align-items-center fs-5 border fw-bold">
+          <div style="height: 100%;">
+            <p>コンサルプラン</p>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 py-3 d-flex align-items-center fs-5 border fw-bold">
+          <div style="height: 100%;">
+              <p>対象</p>
+          </div>
+        </div>
+        <div class="col-7 py-3 d-flex align-items-center fs-5 border">
+          <div style="height: 100%;">
+            <p>社内で運用できるようにしたい</p>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 py-3 d-flex align-items-center fs-5 border fw-bold">
+          <div style="height: 100%;">
+              <p>費用</p>
+          </div>
+        </div>
+        <div class="col-7 py-3 d-flex align-items-center fs-5 border">
+          <div style="height: 100%;">
+            <p>100,000円/月</p>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 py-2 d-flex align-items-center fs-5 border fw-bold">
+          <div style="height: 100%;">
+              <p>内容</p>
+          </div>
+        </div>
+        <div class="col-7 py-2 d-flex align-items-center fs-5 border">
+          <div style="height: 100%;">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>LINEでの相談</li>
+              <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>オンライン相談（月2回）</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <!--スマホ向け-->
+    <div class="container mt-5 d-block d-sm-none">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2 py-2 d-flex align-items-center fs-6 border fw-bold">
+          <div style="height: 100%;">
+              <p></p>
+          </div>
+        </div>
+        <div class="col-8 py-2 d-flex align-items-center fs-6 border fw-bold">
+          <div style="height: 100%;">
+            <p>動画制作プラン</p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2 py-3 d-flex align-items-center fs-6 border fw-bold">
+          <div style="height: 100%;">
+              <p>対象</p>
+          </div>
+        </div>
+        <div class="col-8  py-3 d-flex align-items-center fs-6 border">
+          <div style="height: 100%;">
+            <p>社内で運用できるようにしたい</p>
+            <p>SNSで分からないことを教えて欲しい</p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2 py-3 d-flex align-items-center fs-6 border fw-bold">
+          <div style="height: 100%;">
+              <p>費用</p>
+          </div>
+        </div>
+        <div class="col-8 py-3 d-flex align-items-center fs-6 border">
+          <div style="height: 100%;">
+            <p>100,000円/月</p>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2 py-2 d-flex align-items-center fs-6 border fw-bold">
+          <div style="height: 100%;">
+              <p>内容</p>
+          </div>
+        </div>
+        <div class="col-8 py-2 d-flex align-items-center fs-6 border">
+          <div style="height: 100%;">
+            <ul class="list-unstyled">
+              <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>LINEでの相談</li>
+              <li><i class="bi bi-check" style="color: #00b327; opacity: 1;"></i>オンライン相談（月2回）</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
     </div>
   </main>
 

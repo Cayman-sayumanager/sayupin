@@ -13,33 +13,42 @@
 <body>
   <main>
     <!--ナビバー-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">さゆぴんハウス</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="aboutme.html" class="nav-link">Aboutme</a>
-            </li>
-            <li class="nav-item">
-                <a href="service.html" class="nav-link">サービス</a>
-            </li>
-            <li class="nav-item">
-              <a href="works.html" class="nav-link active">実績</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">問い合わせ</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">さゆぴんハウス</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+              <a href="aboutme.html" class="nav-link">Aboutme</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              サービス
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="service_Instagram.html">Instagram運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_TikTok.html">TikTok運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_SNSConsulting.html">SNSコンサルティング運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_VideoCreation.html">動画制作</a></li>
+            </ul>
+              <!-- <a href="service.html" class="nav-link">サービス</a> -->
+          </li>
+          <li class="nav-item">
+            <a href="works.html" class="nav-link active">実績</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.php" class="nav-link">問い合わせ</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
     <!--課題について-->
     <p class="text-center py-2 bg-light text-black-50 fs-2">こんな課題ありませんか？</p>
@@ -60,7 +69,6 @@
                     <dd class="mt-2 ms-3">SNSを運用できる人材が社内におらず、社内にノウハウがない。</dd>
                     <br><dt>新しい集客経路を作りたい</dt>
                     <dd class="mt-2 ms-3">新たな顧客にアプローチするため、SNSを有効活用したいが運用方法が分からない。</dd>
-                    
                   </dl>
 
               </div>
