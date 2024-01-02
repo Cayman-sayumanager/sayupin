@@ -13,33 +13,43 @@
 <body>
   <main>
     <!--ナビバー-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">さゆぴんハウス</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">代表あいさつ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">お知らせ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">実績</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">問い合わせ</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">さゆぴんハウス</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+              <a href="aboutme.html" class="nav-link">Aboutme</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="service.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              サービス
+            </a>
+            <ul class="dropdown-menu bg-dark">
+              <li><a class="dropdown-item text-light" href="service_Instagram.html">Instagram運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_TikTok.html">TikTok運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_SNSConsulting.html">SNSコンサルティング運用</a></li>
+              <li><a class="dropdown-item text-light" href="service_VideoCreation.html">動画制作</a></li>
+            </ul>
+              <!-- <a href="service.html" class="nav-link">サービス</a> -->
+          </li>
+          <li class="nav-item">
+            <a href="works.html" class="nav-link">実績</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">問い合わせ</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+
     <!--メインビジュアル-->
     <div id="carouselExampleIndicators" class="carousel slide px-0 py-0  bg-img" data-bs-ride="carousel">
       <!--カルーセルインジケータ-->
@@ -72,157 +82,179 @@
     </div>
 
     <!--SNS実績-->
-    <p class="text-center py-2 bg-dark text-white-50">SNS状況</p>
-    <div class="container mt-5">
+    <p class="text-center py-2 mt-2 bg-light text-black-50 fs-2">SNS状況</p>
+    <div class="container mt-4">
       <div class="row gy-3">
         <div class="col-lg-4 col-sm-6">
           <div id="box1" class="box rounded-3 px-10 mx-2">
-            <p>総再生回数<br><span class="count-up1 count-size"></span>回</p>
+            <p class="fw-bold">総再生回数<br><span class="count-up1 count-size"></span>回</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div id="box2" class="box rounded-3 px-10 mx-2">
-            <p>総フォロワー数<br><span class="count-up2 count-size"></span>人</p>
+            <p class="fw-bold">総フォロワー数<br><span class="count-up2 count-size"></span>人</p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div id="box3" class="box rounded-3 px-10 mx-2">
-            <p>総投稿本数<br><span class="count-up3 count-size"></span>本</p>
+            <p class="fw-bold">総投稿本数<br><span class="count-up3 count-size"></span>本</p>
           </div>
         </div>
       </div>
     </div>
     
     <!--出演した動画-->
-    <div class="container mt-1">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-4 col-sm-12">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/9mppLoYjcnM?modestbranding=1" title="のほほん野球デートのはずが...　#バッティング　#野球　#野球女子　#スポーツ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <dl>
+            <dt class="mt-2 fs-5">のほほん野球デートのはずが…</dt>
+            <dd class="mt-2"></dd>
+          </dl>
         </div>
         <div class="col-lg-4 col-sm-12">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/XQhvv-sRSJ4?modestbranding=1" title="私の好きな快感ピッチング集　#野球 #shorts #baseball" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <dl>
+            <dt class="mt-2 fs-5">私の好きなピッチング集</dt>
+            <dd class="mt-2"></dd>
+          </dl>
         </div>
         <div class="col-lg-4 col-sm-12">
           <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/EIwP1obsqjQ" title="【衝撃】ゴルフやってたら雷落ちた、、、　#ゴルフ #shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
+          <dl>
+            <dt class="mt-2 fs-5">【衝撃】ゴルフやってたら雷落ちた…</dt>
+            <dd class="mt-2"></dd>
+          </dl>
         </div>
       </div>
     </div>
 
     <!--お知らせ-->
+<div class="container mt-5">
+    <div class="col border">
+        <p class="py-2" style="font-size: 30px; font-weight: bold;">information</p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">2023/11/01</div>
+                    <div class="col-10">えんてつビジョンにさゆぴんが映ります</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-2">2022/12/20</div>
+                    <div class="col-10">Instagram10万人フォロワー達成</div>
+                </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                  <div class="col-2">2021/12/24</div>
+                  <div class="col-10">Instagramアカウント開設/div>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+                <div class="col-2">2021/11/29</div>
+                <div class="col-10">TikTokアカウント開設</div>
+            </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row">
+              <div class="col-2">2020/05/25</div>
+              <div class="col-10">YouTubeチャンネル開設</div>
+          </div>
+      </li>
+            <!-- 同様の構造を他のリストアイテムにも適用 -->
+        </ul>
+    </div>
+</div>
+
+<!-- 
     <div class="container mt-5">
       <div class="col border">
         <p class="py-2" style="font-size: 30px; font-weight: bold;">imfomation</p>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">1995/04/13 爆誕</li>
-          <li class="list-group-item">1998/06/04 突如走り出す</li>
-          <li class="list-group-item">2000/01/01 ...</li>
-          <li class="list-group-item">2000/01/01 ...</li>
-          <li class="list-group-item">2000/01/01 ...</li>
+          <li class="list-group-item">2023/XX/XX えんてつビジョンにさゆぴんが映ります</li>
+          <li class="list-group-item">2022/12/20 Instagram10万人フォロワー達成</li>
+          <li class="list-group-item">2021/12/24 Instagramアカウント開設</li>
+          <li class="list-group-item">2021/11/29 TikTokアカウント開設</li>
+          <li class="list-group-item">2020/05/25 YouTubeチャンネル開設</li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </main>
     <!--問い合わせボタン-->
     <div class="d-grid gap-2 col-3 mt-5 mx-auto">
-      <a href="#" class="btn btn-secondary rounded-pill" role="button" data-bs-toggle="button">お問い合わせ</a>
+      <a href="contact.html" class="btn btn-secondary rounded-pill" role="button">お問い合わせ</a>
     </div>
-
-    <!-- <div class="border form-background text-center">
-      <h2 class="fs-1 mb-5 text-center fw-bold">お問い合わせ</h2>
-      <form method="post" action="mail.php">
-          <div class="mb-3">
-              <input type="text" class="form-control" name="お名前" placeholder="名前（必須）" value="">
-          </div>
-          <div class="mb-3">
-              <input type="text" class="form-control" name="住所" placeholder="住所" value="">
-          </div>
-          <div class="mb-3">
-              <input type="text" class="form-control" name="Email" placeholder="メールアドレス（必須）" value="">
-          </div>
-          <div class="mb-3">
-              <input type="text" class="form-control" name="電話番号" placeholder="電話番号" value="">
-          </div>
-          <div class="mb-4">
-              <textarea class="form-control" name="お問い合わせ内容" rows="5" placeholder="メッセージを入力してください"></textarea>
-          </div>
-          <div class="form-check mb-4">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-              <label class="form-check-label" for="flexCheckIndeterminate">
-                利用規約に同意します。<a href="" target="_blank" rel="noopener noreferrer" class="text-decoration-underline text-dark">プライバシーポリシーはこちら</a>
-              </label>
-            </div>
-          <div class="text-center pt-4 col-md-6 offset-md-3">
-              <button type="submit" class="btn btn-primary">送信</button>
-          </div>
-      </form>
-    </div> -->
     
   <!--フッター-->
 	<footer class="py-4 mt-5 bg-dark text-center">
-		<div class="container text-center">
-      <p class="text-white-50 mt-1">最新の投稿はこちらから</p>
-      <div class="row gy-3 mt-3">
-            <a class="col-2 iconarea" href="https://www.instagram.com/sayu_pinscher/">
-              <div style="background: linear-gradient(to right,rgba(247, 207, 0, 0.7), rgba(246, 37, 2, 0.7) 45%, rgba(182, 47, 82, 0.7) 75%, rgba(113, 58, 166, 0.7));" >
-                <i class="bi bi-instagram " style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-            <a class="col-2 iconarea"  href="https://www.threads.net/@sayu_pinscher">
-              <div style="background: #000000">
-                <i class="bi bi-threads" style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-            <a class="col-2 iconarea"  href="https://www.youtube.com/@sayu_pinscher" >
-              <div style="background: #ff0000">
-                <i class="bi bi-youtube" style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-            <a class="col-2 iconarea"  href="https://www.tiktok.com/@you_pinscher">
-              <div style="background: #000000"> 
-                <i class="bi bi-tiktok" style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-            <a class="col-2 iconarea"  href="https://linevoom.line.me/user/_dau5zaxWHr0EKPbUaJG-kwfSFyfZzdDB9zwkVfQ">
-              <div style="background: #00B900">
-                <i class="bi bi-line" style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-            <a class="col-2 iconarea"  href="https://www.facebook.com/profile.php?id=100044332763307">
-              <div style="background: #3B5998">
-                <i class="bi bi-facebook" style="font-size: 2rem; color: #fff;"></i>
-              </div>
-            </a>
-      </div>
+    <p class="text-white-50 mt-1 fs-4">最新の投稿はこちらから</p>
+    <div class="row gy-2 mt-2">
+      <a class="col-2 iconarea px-0" href="https://www.instagram.com/sayu_pinscher/">
+        <div style="background: linear-gradient(to right,rgba(247, 207, 0, 0.7), rgba(246, 37, 2, 0.7) 45%, rgba(182, 47, 82, 0.7) 75%, rgba(113, 58, 166, 0.7));" >
+          <i class="bi bi-instagram " style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
+      <a class="col-2 iconarea px-0"  href="https://www.threads.net/@sayu_pinscher">
+        <div style="background: #000000">
+          <i class="bi bi-threads" style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
+      <a class="col-2 iconarea px-0"  href="https://www.youtube.com/@sayu_pinscher" >
+        <div style="background: #ff0000">
+          <i class="bi bi-youtube" style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
+      <a class="col-2 iconarea px-0"  href="https://www.tiktok.com/@you_pinscher">
+        <div style="background: #000000"> 
+          <i class="bi bi-tiktok" style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
+      <a class="col-2 iconarea px-0"  href="https://linevoom.line.me/user/_dau5zaxWHr0EKPbUaJG-kwfSFyfZzdDB9zwkVfQ">
+        <div style="background: #00B900">
+          <i class="bi bi-line" style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
+      <a class="col-2 iconarea px-0"  href="https://www.facebook.com/profile.php?id=100044332763307">
+        <div style="background: #3B5998">
+          <i class="bi bi-facebook" style="font-size: 2rem; color: #fff;"></i>
+        </div>
+      </a>
 		</div>
 
     <!--遊び-->
-    <p class="text-white-50 mt-3">BIG SPONSOR</p>
+    <!-- <p class="text-white-50 mt-3">BIG SPONSOR</p>
     <div class="row">
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <div class="col-2">
+      <div class="col-2 px-2">
         <img class="mt-2" src="images/TSUKOSHI.png" style="width: 100%; border-radius: 10px;"></img>
       </div>
-      <small class="text-white-50 mt-10">Designed and Developed by <a href="https://www.instagram.com/sayu_manager/">Cayman</a></small>
+    </div> -->
+    <div class="mt-2">
+      <small class="text-white-50">Designed and Developed by <a href="https://www.instagram.com/sayu_manager/">Cayman</a></small>
     </div>
 	</footer>
   <!--カウントアップ用-->
