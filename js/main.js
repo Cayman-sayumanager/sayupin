@@ -39,7 +39,7 @@ let Instagram = {
 //公式APIが公開されていないので手動（2023/10/6時点）
 let Tiktok = {
   Tiktoknumofviews:31800500,
-  Tiktoknumoffollowers:30000,
+  Tiktoknumoffollowers:33400,
   Tiktoknumofposts:152
 }
 
@@ -217,6 +217,37 @@ function startCountUpAnimationsnumofposts() {
     }
   });
 }
+
+// DOMが読み込まれた後に実行されるようにします
+document.addEventListener('DOMContentLoaded', function() {
+  // すべての動画プレーヤー要素を取得します
+  var videoPlayers = document.querySelectorAll('.top__movieListItemVideoPlayer');
+
+  // 各動画プレーヤー要素に対して処理を実行します
+  videoPlayers.forEach(function(player) {
+    // data-videoId属性からYouTubeの動画IDを取得します
+    var videoId = player.getAttribute('data-videoId');
+
+    // 動画IDがある場合にのみ処理を続けます
+    if (videoId) {
+      // YouTubeのiframeを作成してプレーヤーに挿入します
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId);
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allowfullscreen', 'true');
+      // iframeのサイズ設定など、その他の属性を設定することもできます
+
+      // 動画を再生するためのプレイボタンをクリックしたときのイベントリスナーを設定します
+      var playButton = player.nextElementSibling;
+      playButton.addEventListener('click', function() {
+        // プレイボタンを非表示にしてiframeを表示します
+        playButton.style.display = 'none';
+        player.appendChild(iframe);
+      });
+    }
+  });
+});
+
 
 // // 動画オブジェクトの格納用
 // var players = {};
