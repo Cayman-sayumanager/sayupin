@@ -1,3 +1,14 @@
+/* ナビバーの背景色 */
+.navbar-dark.bg-dark {
+  background-color: #FD6B86 !important;
+}
+
+/* ボタンの背景色 */
+.btn-secondary {
+  background-color: #FD6B86;
+  border-color: #FD6B86;
+}
+
 .bg-img{
 	/* background-image: url("https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/bootstrap5/bOy4OPu98lI.jpg"); */
 	background-size: cover;
@@ -6,6 +17,15 @@
 
 body{
 	font-family: serif, "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+
+body, html {
+	height: 100%;
+}
+
+.list-group {
+	height: calc(3 * 60px); /* 1項目の高さ(38px) + 1項目の下マージン(6px) を3倍しています。これは仮の数値ですので、実際のデザインに合わせて調整してください */
+	overflow-y: auto;
 }
 
 .box{
@@ -29,19 +49,22 @@ body{
 }
 
 footer{
+	width: 100%;
+  padding-right: 0;
+  padding-left: 0;
 	font-size:16px;
+	background-color: #FD6B86 !important;
 }
+
+.form-check-label {
+	vertical-align: middle;
+}
+
 
 footer a:hover {
 	opacity: 0.75; /* 25％ほど透明にする */
 	transform:scale(1.05,1.05);
   transition:1s all;
-}
-
-.iconarea{
-	width: 200px;
-	margin:0 auto; 
-	overflow:hidden;
 }
 
 .iconarea > div {
@@ -64,6 +87,16 @@ footer a:hover {
 	height: 100%;
 }
 
+/* サービスのリスト */
+.servicelist{
+	
+}
+
+/*代表メッセージ*/
+.message{
+	font-size: 18px;
+}
+
 /* 問い合わせフォーム用背景 */
 
 .form-background {
@@ -78,6 +111,14 @@ body {
 	
 }
 
+.info-fs{
+	font-size: 10px;
+}
+
+.contact-button{
+	font-size: 10px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 	body {
@@ -87,6 +128,14 @@ body {
 		font-size:1.3rem;
 		font-weight: bold;
 		color: #252C8C;
+	}
+
+	.contact-button{
+		font-size: 10px;
+	}
+
+	.info-fs{
+		font-size: 10px;
 	}
 }
 
@@ -99,6 +148,13 @@ body {
 		font-size:1.5rem;
 		font-weight: bold;
 		color: #252C8C;
+	}
+	.contact-button{
+		font-size: 20px;
+	}
+
+	.info-fs{
+		font-size: 20px;
 	}
 }
 
